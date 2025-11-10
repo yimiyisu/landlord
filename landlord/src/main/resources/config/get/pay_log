@@ -1,0 +1,1 @@
+{"name":"pay_log","type":"get","table":"pay_log","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","pay_user","bill_type","create_gmt","update_gmt","order","amount","status","desc","transaction_time","transaction_id"]}

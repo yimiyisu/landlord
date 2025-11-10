@@ -1,0 +1,1 @@
+{"name":"act_apply_exp","type":"list","table":"act_apply","where":{"relate":"AND","exprs":[{"operator":0,"column":"status","alias":"","from":1,"need":false,"value":""},{"operator":0,"column":"activity_id","alias":"","from":1,"need":false}],"operator":0,"from":0,"need":false},"role":5,"params":[],"outputs":["id"]}

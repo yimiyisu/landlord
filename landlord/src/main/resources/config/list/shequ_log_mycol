@@ -1,0 +1,1 @@
+{"name":"shequ_log_mycol","type":"list","table":"shequ_log","where":{"relate":"AND","exprs":[{"operator":0,"column":"uid","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","parent"]}
