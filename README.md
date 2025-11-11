@@ -93,7 +93,7 @@
 
 ## 源码目录结构
 
-- kooteam 目录是 Java 源码文件
+- landlord 目录是 Java 源码文件
 - vue 目录是前端源码文件
 - release 打包后的二进制文件与启动脚本，私有部署的话只需要看这个目录就行
 
@@ -111,7 +111,7 @@
 - 将前端工程 dist 目录中构建好的 app.js 文件进行 gzip 压缩 (文件名保持不变)
 - 压缩后的 app.js 文件复制到 java 工程 src/resources/static/ 目录里
 - 进入 java 工程目录，执行 mvn clean && mvn package -f ./pom.xml 生成 java 二进制文件
-- 最终部署文件地址：kooteam/target/kooteam.jar
+- 最终部署文件地址：landlord/target/landlord.jar
 
 # 关注微信服务号，了解更多
 
