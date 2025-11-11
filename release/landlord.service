@@ -1,0 +1,12 @@
+[Unit]
+Description = landlord server
+After = network.target syslog.target
+Wants = network.target
+
+[Service]
+Type = simple
+Restart=always
+WorkingDirectory = /data/apps/landlord
+ExecStart = java  -Dfile.encoding=UTF-8 -server -XX:+UseG1GC -XX:+TieredCompilation  -Xms512m -Xmx512m -jar /data/apps/landlord/landlord.jar
+[Install]
+WantedBy = multi-user.target
