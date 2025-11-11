@@ -1,1 +1,0 @@
-{"name":"task_detail","type":"list","table":"task_detail","where":{"relate":"AND","exprs":[{"operator":0,"column":"task_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","creator","create_gmt","update_gmt","points_id","task_id","record","image","is_exception","is_clock"]}

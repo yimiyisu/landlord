@@ -1,1 +1,0 @@
-{"name":"electric_log","type":"select","table":"electric_log","where":{"relate":"AND","exprs":[{"operator":0,"column":"house_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["cash","creator","id","due_time","create_gmt","pay_time","status","equipment","comunity_id","type","number","fee_id","trade_id","pay_id"]}

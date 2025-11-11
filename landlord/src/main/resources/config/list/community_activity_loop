@@ -1,1 +1,0 @@
-{"name":"community_activity_loop","type":"list","table":"community_activity","where":{"relate":"AND","exprs":[{"operator":0,"column":"type","alias":"","from":1,"need":false,"value":""},{"operator":2,"column":"create_gmt","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":3,"params":[],"outputs":["id","begin_time","end_time"]}

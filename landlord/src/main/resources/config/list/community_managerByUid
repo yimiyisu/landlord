@@ -1,1 +1,0 @@
-{"name":"community_managerByUid","type":"list","table":"community_manager","where":{"relate":"AND","exprs":[{"operator":0,"column":"community_id","alias":"","from":2,"need":false,"value":"app"},{"operator":0,"column":"uid","alias":"","from":2,"need":false,"value":"uid"}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","community_id","status"]}

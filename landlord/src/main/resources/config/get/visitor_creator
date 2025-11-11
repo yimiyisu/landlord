@@ -1,1 +1,0 @@
-{"name":"visitor_creator","type":"get","table":"visitor","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":3,"params":[],"outputs":["creator","end_time","start_time","is_enter"]}

@@ -1,1 +1,0 @@
-{"name":"message","type":"select","table":"message","where":{"relate":"AND","exprs":[{"operator":0,"column":"article_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":3,"params":[],"outputs":["id","creator","stomp","shell","tipping_list","create_gmt","update_gmt","article_id","content","reply_content","good"]}

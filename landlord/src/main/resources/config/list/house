@@ -1,1 +1,0 @@
-{"name":"house","type":"list","table":"house","where":{"relate":"AND","exprs":[{"operator":0,"column":"","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","title","area_id"]}

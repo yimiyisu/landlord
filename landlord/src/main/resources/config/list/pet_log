@@ -1,1 +1,0 @@
-{"name":"pet_log","type":"list","table":"pet_log","where":{"relate":"AND","exprs":[{"operator":0,"column":"pet_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","inoculation_time","next_time","prove","title","create_gmt","update_gmt","creator","pet_id"],"order":{"name":"create_gmt","type":-1}}

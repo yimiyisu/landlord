@@ -1,1 +1,0 @@
-{"name":"announcement","type":"select","table":"announcement","where":{"relate":"AND","exprs":[{"operator":0,"column":"community_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","title","content","type","image","create_gmt","creator","update_gmt"],"order":{"name":"id","type":-1}}

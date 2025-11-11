@@ -1,1 +1,0 @@
-{"name":"patrol_taskById","type":"get","table":"patrol_task","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","update_gmt","title","route_id","is_finish","inspection_cycle","is_exception"]}

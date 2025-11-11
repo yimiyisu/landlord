@@ -1,1 +1,0 @@
-{"name":"member","type":"get","table":"member","where":{"relate":"AND","exprs":[],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","shell"]}

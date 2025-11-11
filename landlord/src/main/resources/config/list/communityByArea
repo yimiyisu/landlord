@@ -1,1 +1,0 @@
-{"name":"communityByArea","type":"list","table":"community","msg":"","where":{"relate":"AND","exprs":[{"operator":0,"column":"last_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":0,"params":[],"outputs":["id","title"]}

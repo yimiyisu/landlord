@@ -1,1 +1,0 @@
-{"name":"parking","type":"get","table":"parking","msg":"","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","status","area_id","title","type","area_title","community_id"]}
