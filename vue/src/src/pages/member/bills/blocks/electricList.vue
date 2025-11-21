@@ -1,7 +1,7 @@
 <template>
     <div style="margin-top: 15px">
-        <z-list url="/do/select/electric_log" :params="house">
-            <template #default="item">
+        <z-list url="/do/select/electric_log" :params="house" emptyText="暂无账单">
+            <template #row="item">
                 <van-cell-group inset class="card">
                     <van-cell title="创建时间" :value="formattedTime(item.createGmt)" />
                     <van-cell title="应缴时间" :value="formattedTime(item.dueTime)" />

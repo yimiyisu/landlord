@@ -1,0 +1,1 @@
+{"name":"pet","type":"select","table":"pet","where":{"relate":"AND","exprs":[{"operator":0,"column":"house_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","house_id","create_gmt","title","species","note","creator","image","update_gmt"],"order":{"name":"create_gmt","type":-1}}

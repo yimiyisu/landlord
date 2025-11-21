@@ -1,23 +1,21 @@
 <template>
     <!-- 访客列表 -->
-    <z-list title="访客预约" :url="url" :params="params" :size="20" :emptyText="emptyText">
+    <z-list title="访客预约" url="/do/select/visitor_type1" :size="20" emptyText="暂无预约列表">
         <template #row="item">
             <div class="order-item">
-                <Item v-if="visitorType === '0'" :item="item" :fields="fields" />
-                <VisitorItem v-else :item="item" />
+                <Item :item="item" :fields="fields" />
             </div>
         </template>
-        <z-action label="预约" url="/api/visitor/put" :fields="fields" position="top" type="bubble" :beforeSubmit="beforeSubmit" />
+        <z-action v-if="actionShow" label="预约" url="/api/visitor/put" :fields="fields" position="top" type="bubble" :beforeSubmit="beforeSubmit" />
     </z-list>
 </template>
 
 <script>
 import Item from './item.vue';
-import VisitorItem from './visitorItem.vue';
 export default {
-    components: { Item, VisitorItem },
+    components: { Item },
     props: {
-        visitorType: String,
+        actionShow: Boolean
     },
     data() {
         return {
@@ -37,20 +35,6 @@ export default {
                 { name: 'reason', label: '来访理由', type: 'textarea' }
             ],
         };
-    },
-    computed: {
-        url() {
-            return this.visitorType === '1' ? '/do/select/visitor_cont' : '/do/select/visitorType1'
-        },
-        params() {
-            if (this.url === '/do/select/visitor_cont') {
-                return 0
-            }
-            return 1
-        },
-        emptyText() {
-            return this.visitorType === '1' ?  '暂无访客列表' : '暂无预约列表'
-        },
     },
     methods: {
         beforeSubmit(formData) {

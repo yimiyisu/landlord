@@ -75,7 +75,6 @@ export default {
     min-width: 60px;
     text-align: right;
     margin-left: 15px;
-    /* 增加状态与描述和图片容器的间距 */
 }
 
 .value-time {

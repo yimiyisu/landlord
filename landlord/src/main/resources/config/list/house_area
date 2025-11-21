@@ -1,0 +1,1 @@
+{"name":"house_area","type":"list","table":"house_area","where":{"relate":"AND","exprs":[{"operator":0,"column":"is_commercial","alias":"","from":1,"need":false,"value":"0"},{"operator":0,"column":"community_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","title","parent_id","is_leaf"]}

@@ -1,12 +1,10 @@
 <template>
-    <van-tabs v-model:active="active">
-        <van-tab title="水费" name="water">
-            <WaterList/>
-        </van-tab>
-        <van-tab title="电费" name="electric">
-            <ElectricList/>
-        </van-tab>
+    <van-tabs v-model:active="activeName">
+        <van-tab title="水费" name="water"/>
+        <van-tab title="电费" name="electric"/>
     </van-tabs>
+    <WaterList v-if="activeName === 'water'"/>
+    <ElectricList v-else/>
 </template>
 
 <script>
@@ -20,7 +18,7 @@ export default {
     },
     data() {
         return {
-            active: 'water',
+            activeName: 'water',
         };
     },
 };

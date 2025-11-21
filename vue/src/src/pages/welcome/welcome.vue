@@ -49,7 +49,11 @@ export default {
             ]
         }
     },
-    created() {
+    async created() {
+        const token = await $.post({url:"/api/home/trialLogin"});
+        if(token && $.token()) {
+            $.token(token)
+        }
         const tenantId = $.tenant()
         if (window.tenant) {
             $.tenant(window.tenant)
@@ -93,7 +97,6 @@ export default {
         async scan() {
             const code = await $.scan()
             $.success(code)
-
         },
         finish() {
             this.showArea = false

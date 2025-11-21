@@ -7,7 +7,7 @@
             <z-date :value="item.createGmt" />
         </van-cell>
         <div class="action" style="display: flex; justify-content: flex-end;">
-            <z-action size="small" url="/api/visitor/put" :data="item" style="margin: 10px" label="访客预约"
+            <z-action size="small" url="/api/visitor/put" :data="item" style="margin: 10px" label="预约"
                 :fields="visitorFields" position="top" :beforeSubmit="beforeSubmit" />
         </div>
     </van-cell-group>

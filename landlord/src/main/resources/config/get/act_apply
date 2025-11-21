@@ -1,0 +1,1 @@
+{"name":"act_apply","type":"get","table":"act_apply","where":{"relate":"AND","exprs":[{"operator":0,"column":"creator","alias":"","from":2,"need":false,"value":"uid"},{"operator":0,"column":"activity_id","alias":"","from":1,"need":false}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["status"]}

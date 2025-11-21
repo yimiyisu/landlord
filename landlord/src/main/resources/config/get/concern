@@ -1,0 +1,1 @@
+{"name":"concern","type":"get","table":"concern","where":{"relate":"AND","exprs":[{"operator":0,"column":"concerned_uid","alias":"","from":1,"need":false,"value":""},{"operator":0,"column":"concern_uid","alias":"","from":1,"need":false}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","concern_uid","create_gmt","update_gmt","concerned_uid"]}

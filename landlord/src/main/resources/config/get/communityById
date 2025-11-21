@@ -1,0 +1,1 @@
+{"name":"communityById","type":"get","table":"community","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":2,"need":false,"value":"app"}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id"]}

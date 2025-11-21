@@ -9,6 +9,7 @@ import MemberPaper from "./paper/paper";
 import MemberPaperLog from "./paperLog/paperLog";
 import MemberParking from "./parking/parking";
 import MemberPet from "./pet/pet";
+import MemberPetLog from "./petLog/petLog";
 import MemberVisitor from "./visitor/visitor";
 
 export default {
@@ -23,5 +24,6 @@ export default {
 	'member/paperLog': MemberPaperLog,
 	'member/parking': MemberParking,
 	'member/pet': MemberPet,
+	'member/petLog': MemberPetLog,
 	'member/visitor': MemberVisitor
 }

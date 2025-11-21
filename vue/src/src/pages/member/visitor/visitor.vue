@@ -1,26 +1,37 @@
 <template>
     <div class="tabs-wrap">
-        <van-tabs v-model:active="visitorType" color="#1989fa" line-height="3px" animated swipeable>
-            <van-tab title="访客预约" name="0" />
-            <van-tab title="访客" name="1" />
+        <van-tabs v-model:active="activeName"  @click-tab="onClickTab">
+            <van-tab title="访客预约" name="visitorType0" />
+            <van-tab title="访客" name="visitor" />
         </van-tabs>
-        <!-- 访客列表 -->
-        <List :visitorType="visitorType" />
+        <List v-if="activeName === 'visitorType0'" :actionShow="actionShow" />
+        <VisitorList v-else />
     </div>
 </template>
 
 <script>
 import List from './blocks/list.vue';
+import VisitorList from './blocks/visitorList.vue';
 export default {
-    components: { List },
+    components: { List, VisitorList },
     data() {
         return {
-            visitorType: "",
+            activeName: 'visitorType0',
+            actionShow: true
         };
     },
     created() {
         const visitorType = this.$route.query;
         this.visitorType = visitorType || '0';
     },
+    methods: {
+        onClickTab(tab) {
+            if (tab.name === 'visitorType0') {
+                this.actionShow = true;
+            } else {
+                this.actionShow = false;
+            }
+        }
+    }
 }
 </script>

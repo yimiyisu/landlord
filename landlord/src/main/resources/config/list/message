@@ -1,0 +1,1 @@
+{"name":"message","type":"list","table":"message","where":{"relate":"AND","exprs":[{"operator":0,"column":"article_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","creator","create_gmt","article_id","content","reply_content","shell","stomp","good","tipping_list"]}

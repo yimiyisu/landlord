@@ -5,7 +5,7 @@
     </van-popup>
 </template>
 <script>
-import Picker from './picker.vue'
+import Picker from './picker.vue';
 export default {
     data() {
         return {

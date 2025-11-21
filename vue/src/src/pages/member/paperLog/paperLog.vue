@@ -1,21 +1,18 @@
 <template>
     <z-block url="/do/get/workorder" :params="params">
         <template #default="paperInfo">
-            <div class="main">
-                <WorkorderDetail :paperInfo="paperInfo" />
-                <z-block v-if="paperInfo.id" url="/do/list/work_log" :params="{ workorderId: paperInfo.id }">
-                    <template #default="paperLogList">
+            <WorkorderDetail :paperInfo="paperInfo" />
+            <z-block v-if="paperInfo.id" url="/do/list/work_log" :params="{ workorderId: paperInfo.id }">
+                <template #default="paperLogList">
+                    <div style="margin:0 15px; padding: 0 8px;">
                         <div class="loglist-title">处理记录：</div>
                         <LogList v-if="paperLogList" :paperLogList="paperLogList" />
                         <van-empty v-else>
                             暂无处理记录
                         </van-empty>
-                    </template>
-                </z-block>
-                <!-- <div class="action">
-                    <action :paperInfo="paperInfo" />
-                </div> -->
-            </div>
+                    </div>
+                </template>
+            </z-block>
         </template>
     </z-block>
 </template>

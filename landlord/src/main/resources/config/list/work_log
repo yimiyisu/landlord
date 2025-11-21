@@ -1,0 +1,1 @@
+{"name":"work_log","type":"list","table":"work_log","where":{"relate":"AND","exprs":[{"operator":0,"column":"workorder_id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[],"outputs":["id","uid","create_gmt","update_gmt","workorder_id","record","image"]}

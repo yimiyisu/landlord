@@ -15,31 +15,20 @@
                         <z-date :value="item.createGmt" />
                     </van-cell>
                     <van-cell v-if="item.note" title="备注" :value="item.note" />
-                    <z-action size="small" style="margin: 10px 15px" label="接种记录">
-                        <z-action label="添加记录" position="top" size="small" :fields="logFields" url="/do/put/pet_log"
-                            :data="{ petId: item.id }" style="margin: 10px 10px" />
-                        <z-list title="接种列表" url="/do/select/pet_log" :params="getPetLogParams">
-                            <template #row="logItem">
-                                <PetLog :data="logItem" />
-                            </template>
-                        </z-list>
-                    </z-action>
+                    <van-button type="primary" size="small" style="margin: 10px;"
+                        @click="showPetLog(item)">接种记录</van-button>
                 </van-cell-group>
             </template>
+            <!-- 上传宠物 -->
+            <z-action label="登记" type="bubble" position="top" url="/do/put/pet" :fields="fields"
+                :beforeSubmit="submit" />
         </z-list>
-        <van-empty image="error" description="暂无宠物" v-else/>
     </div>
-    <!-- 上传宠物 -->
-    <z-action label="登记" type="bubble" position="top" url="/do/put/pet" :fields="fields" :beforeSubmit="submit" />
 </template>
 
 <script>
-import PetLog from './blocks/petLog.vue';
 export default {
     inject: ['houseId'],
-    components: {
-        PetLog
-    },
     data() {
         return {
             fields: [
@@ -72,6 +61,14 @@ export default {
         submit(data) {
             data.houseId = this.houseId
             return data
+        },
+        showPetLog(pet) {
+            this.$router.push({
+                path: '/member/petLog',
+                query: {
+                    petId: pet.id
+                }
+            })
         }
     }
 };

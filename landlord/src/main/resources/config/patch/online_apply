@@ -1,0 +1,1 @@
+{"name":"online_apply","type":"patch","table":"online_apply","msg":"","where":{"relate":"AND","exprs":[{"operator":0,"column":"id","alias":"","from":1,"need":false,"value":""}],"operator":0,"from":0,"need":false},"role":1,"params":[{"name":"update_gmt","value":"current","from":2},{"name":"phone","value":"","from":1},{"name":"extra","value":"","from":1}],"outputs":[]}
